@@ -2,7 +2,6 @@
 #include <string.h>
 #include <fcntl.h>
 #include <stdlib.h>
-#include <unistd.h>
 
 void main(int argc, char** argv){
 	char buf[BUFSIZ];
@@ -16,9 +15,9 @@ void main(int argc, char** argv){
 	printf("gpio set: %s\n", argv[1]);
 	fd =open("/dev/ledtest", O_RDWR);
 	printf("fd: %d\n", fd);
-	write(fd, argv[1], strlen(argv[1]));
+	write(fd, argv[1], strlen(argv[1]), NULL);
 	memset(buf, 0, BUFSIZ);
-	read(fd, buf, strlen(argv[1]));
+	read(fd, buf, strlen(argv[1]), NULL);
 	printf("read: %s \n", buf);
 	
 	close(fd);

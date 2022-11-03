@@ -1,0 +1,1 @@
+cmd_/home/pi/test/day4/18_sjlee/06_linux_kernal_module_GPIO/led_module.ko := ld -r -EL -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/pi/test/day4/18_sjlee/06_linux_kernal_module_GPIO/led_module.ko /home/pi/test/day4/18_sjlee/06_linux_kernal_module_GPIO/led_module.o /home/pi/test/day4/18_sjlee/06_linux_kernal_module_GPIO/led_module.mod.o;  true
