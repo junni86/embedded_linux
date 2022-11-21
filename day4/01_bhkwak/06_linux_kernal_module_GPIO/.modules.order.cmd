@@ -1,1 +1,0 @@
-cmd_/home/pi/embedded_linux/day4/01_bhkwak/06_linux_kernal_module_GPIO/modules.order := {   echo /home/pi/embedded_linux/day4/01_bhkwak/06_linux_kernal_module_GPIO/led_module.ko; :; } | awk '!x[$$0]++' - > /home/pi/embedded_linux/day4/01_bhkwak/06_linux_kernal_module_GPIO/modules.order

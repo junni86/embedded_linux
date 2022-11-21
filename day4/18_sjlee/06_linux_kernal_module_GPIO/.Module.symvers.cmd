@@ -1,1 +1,0 @@
-cmd_/home/pi/test/day4/18_sjlee/06_linux_kernal_module_GPIO/Module.symvers := sed 's/\.ko$$/\.o/' /home/pi/test/day4/18_sjlee/06_linux_kernal_module_GPIO/modules.order | scripts/mod/modpost -m -a  -o /home/pi/test/day4/18_sjlee/06_linux_kernal_module_GPIO/Module.symvers -e -i Module.symvers   -T -
